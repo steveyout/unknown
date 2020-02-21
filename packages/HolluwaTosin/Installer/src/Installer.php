@@ -196,7 +196,9 @@ class Installer
             ];
         }
 
-        return ['error' => $status_code, 'message' => __('Opps! Something went wrong!')];
+        $details = (string) $response->getBody();
+
+        $this->cache->put($this->prefix . 'details', $details, now()->addDay());
     }
 
     /**
