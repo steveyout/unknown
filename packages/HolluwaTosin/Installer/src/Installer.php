@@ -181,11 +181,9 @@ class Installer
                     'message' => __('An unexpected error occurred! Please contact the author of this script')
             ];
         } elseif ($status_code == 401) {
-            $details = (string) $response->getBody();
-
-            $this->cache->put($this->prefix . 'details', $details, now()->addDay());
-
-
+            return ['error'   => $status_code,
+                    'message' => __('Your verification code seems to be invalid. Please try again!')
+            ];
         } elseif ($status_code == 404) {
             return ['error'   => $status_code,
                     'message' => __('An unexpected error occurred! Your license details could not be found!')
@@ -196,9 +194,7 @@ class Installer
             ];
         }
 
-        $details = (string) $response->getBody();
-
-        $this->cache->put($this->prefix . 'details', $details, now()->addDay());
+        return ['error' => $status_code, 'message' => __('Opps! Something went wrong!')];
     }
 
     /**
