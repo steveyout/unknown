@@ -5,14 +5,13 @@ namespace PHPSTORM_META {
 
    /**
     * PhpStorm Meta file, to provide autocomplete information for PhpStorm
-    * Generated on 2019-03-14 14:48:00.
+    * Generated on 2020-04-24 09:43:42.
     *
     * @author Barry vd. Heuvel <barryvdh@gmail.com>
     * @see https://github.com/barryvdh/laravel-ide-helper
     */
     override(new \Illuminate\Contracts\Container\Container, map([
         '' => '@',
-        'Barryvdh\Debugbar\LaravelDebugbar' => \Barryvdh\Debugbar\LaravelDebugbar::class,
         'DaveJamesMiller\Breadcrumbs\BreadcrumbsGenerator' => \DaveJamesMiller\Breadcrumbs\BreadcrumbsGenerator::class,
         'DaveJamesMiller\Breadcrumbs\BreadcrumbsManager' => \DaveJamesMiller\Breadcrumbs\BreadcrumbsManager::class,
         'Illuminate\Broadcasting\BroadcastManager' => \Illuminate\Broadcasting\BroadcastManager::class,
@@ -64,7 +63,6 @@ namespace PHPSTORM_META {
         'command.config.clear' => \Illuminate\Foundation\Console\ConfigClearCommand::class,
         'command.console.make' => \Illuminate\Foundation\Console\ConsoleMakeCommand::class,
         'command.controller.make' => \Illuminate\Routing\Console\ControllerMakeCommand::class,
-        'command.debugbar.clear' => \Barryvdh\Debugbar\Console\ClearCommand::class,
         'command.dotenv.backup' => \Jackiedo\DotenvEditor\Console\Commands\DotenvBackupCommand::class,
         'command.dotenv.deletekey' => \Jackiedo\DotenvEditor\Console\Commands\DotenvDeleteKeyCommand::class,
         'command.dotenv.getbackups' => \Jackiedo\DotenvEditor\Console\Commands\DotenvGetBackupsCommand::class,
@@ -193,6 +191,7 @@ namespace PHPSTORM_META {
         'session' => \Illuminate\Session\SessionManager::class,
         'session.store' => \Illuminate\Session\Store::class,
         'swift.mailer' => \Swift_Mailer::class,
+        'swift.transport' => \Illuminate\Mail\TransportManager::class,
         'toastr' => \Yoeunes\Toastr\Toastr::class,
         'translation-manager' => \Barryvdh\TranslationManager\Manager::class,
         'translation.loader' => \Illuminate\Translation\FileLoader::class,
@@ -205,7 +204,6 @@ namespace PHPSTORM_META {
     ]));
     override(\Illuminate\Contracts\Container\Container::make(0), map([
         '' => '@',
-        'Barryvdh\Debugbar\LaravelDebugbar' => \Barryvdh\Debugbar\LaravelDebugbar::class,
         'DaveJamesMiller\Breadcrumbs\BreadcrumbsGenerator' => \DaveJamesMiller\Breadcrumbs\BreadcrumbsGenerator::class,
         'DaveJamesMiller\Breadcrumbs\BreadcrumbsManager' => \DaveJamesMiller\Breadcrumbs\BreadcrumbsManager::class,
         'Illuminate\Broadcasting\BroadcastManager' => \Illuminate\Broadcasting\BroadcastManager::class,
@@ -257,7 +255,6 @@ namespace PHPSTORM_META {
         'command.config.clear' => \Illuminate\Foundation\Console\ConfigClearCommand::class,
         'command.console.make' => \Illuminate\Foundation\Console\ConsoleMakeCommand::class,
         'command.controller.make' => \Illuminate\Routing\Console\ControllerMakeCommand::class,
-        'command.debugbar.clear' => \Barryvdh\Debugbar\Console\ClearCommand::class,
         'command.dotenv.backup' => \Jackiedo\DotenvEditor\Console\Commands\DotenvBackupCommand::class,
         'command.dotenv.deletekey' => \Jackiedo\DotenvEditor\Console\Commands\DotenvDeleteKeyCommand::class,
         'command.dotenv.getbackups' => \Jackiedo\DotenvEditor\Console\Commands\DotenvGetBackupsCommand::class,
@@ -386,6 +383,7 @@ namespace PHPSTORM_META {
         'session' => \Illuminate\Session\SessionManager::class,
         'session.store' => \Illuminate\Session\Store::class,
         'swift.mailer' => \Swift_Mailer::class,
+        'swift.transport' => \Illuminate\Mail\TransportManager::class,
         'toastr' => \Yoeunes\Toastr\Toastr::class,
         'translation-manager' => \Barryvdh\TranslationManager\Manager::class,
         'translation.loader' => \Illuminate\Translation\FileLoader::class,
@@ -398,7 +396,6 @@ namespace PHPSTORM_META {
     ]));
     override(\Illuminate\Contracts\Container\Container::makeWith(0), map([
         '' => '@',
-        'Barryvdh\Debugbar\LaravelDebugbar' => \Barryvdh\Debugbar\LaravelDebugbar::class,
         'DaveJamesMiller\Breadcrumbs\BreadcrumbsGenerator' => \DaveJamesMiller\Breadcrumbs\BreadcrumbsGenerator::class,
         'DaveJamesMiller\Breadcrumbs\BreadcrumbsManager' => \DaveJamesMiller\Breadcrumbs\BreadcrumbsManager::class,
         'Illuminate\Broadcasting\BroadcastManager' => \Illuminate\Broadcasting\BroadcastManager::class,
@@ -450,7 +447,6 @@ namespace PHPSTORM_META {
         'command.config.clear' => \Illuminate\Foundation\Console\ConfigClearCommand::class,
         'command.console.make' => \Illuminate\Foundation\Console\ConsoleMakeCommand::class,
         'command.controller.make' => \Illuminate\Routing\Console\ControllerMakeCommand::class,
-        'command.debugbar.clear' => \Barryvdh\Debugbar\Console\ClearCommand::class,
         'command.dotenv.backup' => \Jackiedo\DotenvEditor\Console\Commands\DotenvBackupCommand::class,
         'command.dotenv.deletekey' => \Jackiedo\DotenvEditor\Console\Commands\DotenvDeleteKeyCommand::class,
         'command.dotenv.getbackups' => \Jackiedo\DotenvEditor\Console\Commands\DotenvGetBackupsCommand::class,
@@ -579,6 +575,7 @@ namespace PHPSTORM_META {
         'session' => \Illuminate\Session\SessionManager::class,
         'session.store' => \Illuminate\Session\Store::class,
         'swift.mailer' => \Swift_Mailer::class,
+        'swift.transport' => \Illuminate\Mail\TransportManager::class,
         'toastr' => \Yoeunes\Toastr\Toastr::class,
         'translation-manager' => \Barryvdh\TranslationManager\Manager::class,
         'translation.loader' => \Illuminate\Translation\FileLoader::class,
@@ -591,7 +588,6 @@ namespace PHPSTORM_META {
     ]));
     override(\App::make(0), map([
         '' => '@',
-        'Barryvdh\Debugbar\LaravelDebugbar' => \Barryvdh\Debugbar\LaravelDebugbar::class,
         'DaveJamesMiller\Breadcrumbs\BreadcrumbsGenerator' => \DaveJamesMiller\Breadcrumbs\BreadcrumbsGenerator::class,
         'DaveJamesMiller\Breadcrumbs\BreadcrumbsManager' => \DaveJamesMiller\Breadcrumbs\BreadcrumbsManager::class,
         'Illuminate\Broadcasting\BroadcastManager' => \Illuminate\Broadcasting\BroadcastManager::class,
@@ -643,7 +639,6 @@ namespace PHPSTORM_META {
         'command.config.clear' => \Illuminate\Foundation\Console\ConfigClearCommand::class,
         'command.console.make' => \Illuminate\Foundation\Console\ConsoleMakeCommand::class,
         'command.controller.make' => \Illuminate\Routing\Console\ControllerMakeCommand::class,
-        'command.debugbar.clear' => \Barryvdh\Debugbar\Console\ClearCommand::class,
         'command.dotenv.backup' => \Jackiedo\DotenvEditor\Console\Commands\DotenvBackupCommand::class,
         'command.dotenv.deletekey' => \Jackiedo\DotenvEditor\Console\Commands\DotenvDeleteKeyCommand::class,
         'command.dotenv.getbackups' => \Jackiedo\DotenvEditor\Console\Commands\DotenvGetBackupsCommand::class,
@@ -772,6 +767,7 @@ namespace PHPSTORM_META {
         'session' => \Illuminate\Session\SessionManager::class,
         'session.store' => \Illuminate\Session\Store::class,
         'swift.mailer' => \Swift_Mailer::class,
+        'swift.transport' => \Illuminate\Mail\TransportManager::class,
         'toastr' => \Yoeunes\Toastr\Toastr::class,
         'translation-manager' => \Barryvdh\TranslationManager\Manager::class,
         'translation.loader' => \Illuminate\Translation\FileLoader::class,
@@ -784,7 +780,6 @@ namespace PHPSTORM_META {
     ]));
     override(\App::makeWith(0), map([
         '' => '@',
-        'Barryvdh\Debugbar\LaravelDebugbar' => \Barryvdh\Debugbar\LaravelDebugbar::class,
         'DaveJamesMiller\Breadcrumbs\BreadcrumbsGenerator' => \DaveJamesMiller\Breadcrumbs\BreadcrumbsGenerator::class,
         'DaveJamesMiller\Breadcrumbs\BreadcrumbsManager' => \DaveJamesMiller\Breadcrumbs\BreadcrumbsManager::class,
         'Illuminate\Broadcasting\BroadcastManager' => \Illuminate\Broadcasting\BroadcastManager::class,
@@ -836,7 +831,6 @@ namespace PHPSTORM_META {
         'command.config.clear' => \Illuminate\Foundation\Console\ConfigClearCommand::class,
         'command.console.make' => \Illuminate\Foundation\Console\ConsoleMakeCommand::class,
         'command.controller.make' => \Illuminate\Routing\Console\ControllerMakeCommand::class,
-        'command.debugbar.clear' => \Barryvdh\Debugbar\Console\ClearCommand::class,
         'command.dotenv.backup' => \Jackiedo\DotenvEditor\Console\Commands\DotenvBackupCommand::class,
         'command.dotenv.deletekey' => \Jackiedo\DotenvEditor\Console\Commands\DotenvDeleteKeyCommand::class,
         'command.dotenv.getbackups' => \Jackiedo\DotenvEditor\Console\Commands\DotenvGetBackupsCommand::class,
@@ -965,6 +959,7 @@ namespace PHPSTORM_META {
         'session' => \Illuminate\Session\SessionManager::class,
         'session.store' => \Illuminate\Session\Store::class,
         'swift.mailer' => \Swift_Mailer::class,
+        'swift.transport' => \Illuminate\Mail\TransportManager::class,
         'toastr' => \Yoeunes\Toastr\Toastr::class,
         'translation-manager' => \Barryvdh\TranslationManager\Manager::class,
         'translation.loader' => \Illuminate\Translation\FileLoader::class,
@@ -977,7 +972,6 @@ namespace PHPSTORM_META {
     ]));
     override(\app(0), map([
         '' => '@',
-        'Barryvdh\Debugbar\LaravelDebugbar' => \Barryvdh\Debugbar\LaravelDebugbar::class,
         'DaveJamesMiller\Breadcrumbs\BreadcrumbsGenerator' => \DaveJamesMiller\Breadcrumbs\BreadcrumbsGenerator::class,
         'DaveJamesMiller\Breadcrumbs\BreadcrumbsManager' => \DaveJamesMiller\Breadcrumbs\BreadcrumbsManager::class,
         'Illuminate\Broadcasting\BroadcastManager' => \Illuminate\Broadcasting\BroadcastManager::class,
@@ -1029,7 +1023,6 @@ namespace PHPSTORM_META {
         'command.config.clear' => \Illuminate\Foundation\Console\ConfigClearCommand::class,
         'command.console.make' => \Illuminate\Foundation\Console\ConsoleMakeCommand::class,
         'command.controller.make' => \Illuminate\Routing\Console\ControllerMakeCommand::class,
-        'command.debugbar.clear' => \Barryvdh\Debugbar\Console\ClearCommand::class,
         'command.dotenv.backup' => \Jackiedo\DotenvEditor\Console\Commands\DotenvBackupCommand::class,
         'command.dotenv.deletekey' => \Jackiedo\DotenvEditor\Console\Commands\DotenvDeleteKeyCommand::class,
         'command.dotenv.getbackups' => \Jackiedo\DotenvEditor\Console\Commands\DotenvGetBackupsCommand::class,
@@ -1158,6 +1151,7 @@ namespace PHPSTORM_META {
         'session' => \Illuminate\Session\SessionManager::class,
         'session.store' => \Illuminate\Session\Store::class,
         'swift.mailer' => \Swift_Mailer::class,
+        'swift.transport' => \Illuminate\Mail\TransportManager::class,
         'toastr' => \Yoeunes\Toastr\Toastr::class,
         'translation-manager' => \Barryvdh\TranslationManager\Manager::class,
         'translation.loader' => \Illuminate\Translation\FileLoader::class,
@@ -1170,7 +1164,6 @@ namespace PHPSTORM_META {
     ]));
     override(\resolve(0), map([
         '' => '@',
-        'Barryvdh\Debugbar\LaravelDebugbar' => \Barryvdh\Debugbar\LaravelDebugbar::class,
         'DaveJamesMiller\Breadcrumbs\BreadcrumbsGenerator' => \DaveJamesMiller\Breadcrumbs\BreadcrumbsGenerator::class,
         'DaveJamesMiller\Breadcrumbs\BreadcrumbsManager' => \DaveJamesMiller\Breadcrumbs\BreadcrumbsManager::class,
         'Illuminate\Broadcasting\BroadcastManager' => \Illuminate\Broadcasting\BroadcastManager::class,
@@ -1222,7 +1215,6 @@ namespace PHPSTORM_META {
         'command.config.clear' => \Illuminate\Foundation\Console\ConfigClearCommand::class,
         'command.console.make' => \Illuminate\Foundation\Console\ConsoleMakeCommand::class,
         'command.controller.make' => \Illuminate\Routing\Console\ControllerMakeCommand::class,
-        'command.debugbar.clear' => \Barryvdh\Debugbar\Console\ClearCommand::class,
         'command.dotenv.backup' => \Jackiedo\DotenvEditor\Console\Commands\DotenvBackupCommand::class,
         'command.dotenv.deletekey' => \Jackiedo\DotenvEditor\Console\Commands\DotenvDeleteKeyCommand::class,
         'command.dotenv.getbackups' => \Jackiedo\DotenvEditor\Console\Commands\DotenvGetBackupsCommand::class,
@@ -1351,6 +1343,7 @@ namespace PHPSTORM_META {
         'session' => \Illuminate\Session\SessionManager::class,
         'session.store' => \Illuminate\Session\Store::class,
         'swift.mailer' => \Swift_Mailer::class,
+        'swift.transport' => \Illuminate\Mail\TransportManager::class,
         'toastr' => \Yoeunes\Toastr\Toastr::class,
         'translation-manager' => \Barryvdh\TranslationManager\Manager::class,
         'translation.loader' => \Illuminate\Translation\FileLoader::class,
