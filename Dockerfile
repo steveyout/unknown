@@ -2,6 +2,8 @@ FROM composer:1.9.0 as build
 WORKDIR /app
 COPY . /app
 RUN composer global require hirak/prestissimo && composer install
+RUN composer require ext-gd:*
+RUN composer require ext-mysqli:*
 
 FROM php:7.3-apache-stretch
 RUN docker-php-ext-install pdo pdo_mysql
