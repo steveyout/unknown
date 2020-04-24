@@ -101,6 +101,12 @@
             "@php artisan ide-helper:meta",
             "@php artisan ide-helper:models -N",
             "@php artisan version:refresh"
+        ],
+        "post-install-cmd": [
+            "chmod -R 755 bootstrap\/cache",
+            "chmod -R 755 .env",
+            "php artisan config:cache",
+            "php artisan route:cache"
         ]
     },
     "config": {
